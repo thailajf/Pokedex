@@ -1,8 +1,11 @@
 #Pokédex
 ----
 
-<img src="https://github.com/thailajf/Pokedex/blob/master/images-gif/App.gif?raw=true" alt="Pokedex-Page">
+Technologies: React,React Router, Styled-Components, React Hooks,Redux,Flebox.
 
+Contain: ES6 structure,Responsive layout and a few tests.
+
+<img src="https://github.com/thailajf/Pokedex/blob/master/images-gif/App.gif?raw=true" alt="Pokedex-Page">
 
 
 ## Available Scripts
