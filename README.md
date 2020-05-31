@@ -7,7 +7,6 @@
 Technologies: React,React Router, Styled-Components, React Hooks,Redux,Flebox.
 
 Contain: ES6 structure,Responsive layout and a few tests.
-
 (Contêm: Sintaxe ES6 , Layout Responsivo , e alguns testes.)
 
 ## Available Scripts
