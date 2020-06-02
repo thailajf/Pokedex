@@ -2,11 +2,10 @@
 ----
 
 
-<img src="https://github.com/thailajf/Pokedex/blob/master/images-gif/App.gif?raw=true" alt="Pokedex-Page">
 
-Technologies: React,React Router, Styled-Components, React Hooks,Redux,Flebox.
+Technologies: React,React Router, Styled-Components, React Hooks,Redux,Flebox,Jest.
 
-Contain: ES6 structure,Responsive layout and a few tests.
+Contain: ES6 structure,Responsive layout and a few tests.<br/>
 (Contêm: Sintaxe ES6 , Layout Responsivo , e alguns testes.)
 
 ## Available Scripts
