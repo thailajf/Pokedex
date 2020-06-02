@@ -32,7 +32,7 @@ export default function PokemonPage() {
 
   useEffect(() => {
     handleInitialize();
-  }, []);
+  });
 
   const handlePokemonImage = () => {
     if (ImageStatus) {

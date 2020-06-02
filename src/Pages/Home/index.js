@@ -28,45 +28,48 @@ export default function Home() {
   const history = useHistory();
 
   const handlePokemons = async () => {
-    try {
-      let response = await api.get(RouteApi);
-      response = response.data;
-      const pokemonData = response.results;
-      const pokemon = await Promise.all(
-        pokemonData.map(async (p) => {
-          const { data } = await api.get(`pokemon/${p.name}`);
+    if (NextPage || !Pokemons) {
+      try {
+        let response = await api.get(RouteApi);
+        response = response.data;
+        const pokemonData = response.results;
+        const pokemon = await Promise.all(
+          pokemonData.map(async (p) => {
+            const { data } = await api.get(`pokemon/${p.name}`);
 
-          return data;
-        })
-      );
+            return data;
+          })
+        );
 
-      await setPokemons(pokemon);
+        await setPokemons(pokemon);
 
-      if (Pokemons !== pokemon) {
-        setLoading(false);
+        setNextPage(response.next);
+        setPrevPage(response.previous);
+      } catch (error) {
+        console.log(error);
       }
-
-      setNextPage(response.next);
-      setPrevPage(response.previous);
-    } catch (error) {
-      console.log(error);
+    } else {
+      setLoading(true);
+      setPokemons(null);
     }
+  };
+  const handleRender = async () => {
+    await handlePokemons();
+    setLoading(false);
   };
 
   useEffect(() => {
-    handlePokemons();
+    handleRender();
   }, [Loading]);
 
   const handleNextPage = async () => {
     setLoading(true);
-    setRouteApi(NextPage);
-    await handlePokemons();
+    await setRouteApi(NextPage);
   };
 
   const handlePrevPage = async () => {
     setLoading(true);
-    setRouteApi(PrevPage);
-    await handlePokemons();
+    await setRouteApi(PrevPage);
   };
 
   function handlePokemonData(pokemon) {
