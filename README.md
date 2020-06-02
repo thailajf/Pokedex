@@ -2,7 +2,6 @@
 ----
 
 
-<img src="https://github.com/thailajf/Pokedex/blob/master/images-gif/App.gif?raw=true" alt="Pokedex-Page">
 
 Technologies: React,React Router, Styled-Components, React Hooks,Redux,Flebox,Jest.
 
