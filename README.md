@@ -3,7 +3,7 @@
 
 
 
-Technologies: React,React Router, Styled-Components, React Hooks,Redux,Flexbox,Jest.
+Technologies: React,React Router, Styled-Components, React Hooks,Redux,Flexbox,Jest e Testing Library.
 
 Contain: ES6 structure,Responsive layout and a few tests.<br/>
 (Contêm: Sintaxe ES6 , Layout Responsivo , e alguns testes.)
